@@ -7,7 +7,9 @@ public class SnakeAndLadderProgram {
 	static final int winningPosition = 100;
 	public static void main(String[] args) {
 		System.out.println("Welcome to snake and ladder game program");
+		
 		 int position = 0;
+		 int rollingCount = 0;
 		 System.out.println("position of single player is :" + position);
 		 Random random = new Random();
 		 
@@ -35,9 +37,10 @@ public class SnakeAndLadderProgram {
          default:
       	   System.out.println("No Play");
          }
-         
+          rollingCount ++ ;
          System.out.println("position of single player is = " + position);                
-         }    
+         }  
+		 System.out.println("Number of roles to win:" + rollingCount);
 	}
 }
 
