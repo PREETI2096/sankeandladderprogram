@@ -3,14 +3,15 @@ package com.bridgelabz.sankeandladderprogram;
 import java.util.Random;
 
 public class SnakeAndLadderProgram {
-
+	
+	static final int winningPosition = 100;
 	public static void main(String[] args) {
 		System.out.println("Welcome to snake and ladder game program");
 		 int position = 0;
 		 System.out.println("position of single player is :" + position);
 		 Random random = new Random();
 		 
-		 while(position < 100) {
+		 while(position < winningPosition) {
 		 int options = random.nextInt(3);
 		 System.out.println("Option :" + options);
          
